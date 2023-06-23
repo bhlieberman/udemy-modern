@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+html {
+    background-color: #eceff1;
+    font-family: 'Work Sans';
+}
+
+.pageTitle {
+    color: black;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: blue;
+    text-align: center;
+    margin: 1rem;
+}
+
+.pokemon img:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
+    transition: all ease 500ms;
+}
+
+.pokemon:hover {
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.5);
+}
+
+#winner {
+    display: inline-block;
+}
+
+.poke-info {
+    color: black;
+}
+
+.winner {
+    color: green;
+    font-size: large;
+}
+
+.loser {
+    color: red;
+    font-size: large;
+}
