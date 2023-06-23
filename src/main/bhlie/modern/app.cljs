@@ -3,12 +3,14 @@
             [goog.dom :as gdom] 
             [bhlie.modern.pokedex :refer [display-app]]
             [bhlie.modern.slots :refer [slot-machine]]
+            [bhlie.modern.rando :refer [Rando die roll-dice]]
             ["react-dom/client" :refer [createRoot]]))
 
 (defonce root (createRoot (gdom/getElement "root")))
 
 (defn main []
-  [display-app])
+  #_[display-app]
+  [roll-dice])
 
 (defn ^:dev/after-load init []
   (.render root (r/as-element [main])))
