@@ -4,6 +4,7 @@ resources/public/js/
 .clj-kondo/
 .lsp/
 .portal/
+.calva/
 
 /target
 /checkouts
